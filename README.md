@@ -9,7 +9,7 @@ Beginning of a wrapper for ajax, for the javascript backend of [nim](https://nim
 
 ```nim
 import dom
-import ../ajax
+import ajax
 
 proc makeRequest(url:cstring) =
   var httpRequest = newXMLHttpRequest()
@@ -26,8 +26,6 @@ proc makeRequest(url:cstring) =
   httpRequest.onreadystatechange = alertContents
   httpRequest.open("GET", url);
   httpRequest.send();
-
-
 
 document.getElementById("ajaxButton").onclick = proc(e:Event) =
   makeRequest("test.html")
