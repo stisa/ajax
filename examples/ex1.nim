@@ -1,13 +1,3 @@
-Ajax
-----
-
-Beginning of a wrapper for ajax, for the javascript backend of [nim](https://nim-lang.org)
-  
-[Examples](http://stisa.space/ajax)  
-
-[Generated Docs](http://stisa.space/ajax/ajax.html)
-
-```nim
 import dom
 import ../ajax
 
@@ -31,5 +21,5 @@ proc makeRequest(url:cstring) =
 
 document.getElementById("ajaxButton").onclick = proc(e:Event) =
   makeRequest("test.html")
-```
 
+  
