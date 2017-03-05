@@ -1,12 +1,14 @@
 Ajax
 ----
+[![nimble](https://raw.githubusercontent.com/yglukhov/nimble-tag/master/nimble_js.png)](#)
 
-Beginning of a wrapper for ajax, for the javascript backend of [nim](https://nim-lang.org)
+Basic wrapper for ajax, for the javascript backend of [nim](https://nim-lang.org)
   
 [Examples](http://stisa.space/ajax)  
 
 [Generated Docs](http://stisa.space/ajax/ajax.html)
 
+Example: Alert the content of a file named `test.html`
 ```nim
 import dom
 import ajax
