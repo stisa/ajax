@@ -1,5 +1,5 @@
 import dom
-import ../ajax
+import ../src/ajax
 
 proc makeRequest(url:cstring) =
   var httpRequest = newXMLHttpRequest()
