@@ -13,14 +13,14 @@ type XmlHttpRequestEventTarget* = object of EventTarget
   ## Contains the function to call when a request encounters an error and the error event is received by this object.
   ## onload* :proc()
   ## Contains the function to call when an HTTP request returns after successfully fetching content and the load event is received by this object.
-  onloadstart* :proc(e:Event)
-    ## Contains the function that gets called when the HTTP request first begins loading data and the loadstart event is received by this object.
-  onprogress* :proc(e:ProgressEvent)
-    ## Contains the function that is called periodically with information about the progress of the request and the progress event is received by this object.
+  ## onloadstart* :proc(e:Event)
+  ## Contains the function that gets called when the HTTP request first begins loading data and the loadstart event is received by this object.
+  ## onprogress* :proc(e:ProgressEvent)
+  ## Contains the function that is called periodically with information about the progress of the request and the progress event is received by this object.
   ontimeout* :proc(e:Event)
     ## Contains the function that is called if the event times out and the timeout event is received by this object; this only happens if a timeout has been previously established by setting the value of the XMLHttpRequest object's timeout attribute.
-  onloadend* :proc(e:Event)
-    ## Contains the function that is called when the load is completed, even if the request failed, and the loadend event is received by this object.
+  ## onloadend* :proc(e:Event)
+  ## Contains the function that is called when the load is completed, even if the request failed, and the loadend event is received by this object.
 type XmlHttpRequestUpload* = object of XmlHttpRequestEventTarget
 
 type ReadyState* = enum
