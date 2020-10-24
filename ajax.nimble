@@ -1,5 +1,5 @@
 # Package
-version       = "0.1.0"
+version       = "0.1.1"
 author        = "stisa"
 description   = "Wrapper for js ajax"
 license       = "MIT"
@@ -7,7 +7,7 @@ license       = "MIT"
 srcDir = "src"
 
 # Deps
-requires: "nim >= 0.14.0"
+requires: "nim >= 1.4.0"
 
 import ospaths
 
