@@ -33,6 +33,7 @@ type ReadyState* = enum
 type XMLHttpRequestObj  {.importc} = object of RootObj
   onreadystatechange* :proc(e:Event)
     ## An EventHandler that is called whenever the readyState attribute changes.
+  onerror* :proc(e:Event)
   readyState* :ReadyState
     ## Returns an unsigned short, the state of the request.
   response* :cstring # this is... a problem. Maybe move to a proc so the object is not generice'd?' https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/response
